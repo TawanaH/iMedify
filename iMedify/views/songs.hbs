@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar" id = navArea>
+            <ul class="nav-links">
+                <li><a href="/private/home">Home</a></li>
+                <li><a href="#playlistArea">Playlist</a></li>
+                <li><a href="/private/local">Add Local Media</a></li>
+            </ul>
+        </nav>
+
+        <div class = "wrapper" id = inputArea>
+            Enter Song Title: <input type="text" id="title" />
+            <button id="submit_button"  style="margin-bottom: 50px;" onclick="getSongs()">Submit</button>
+        </div>
+
+        <div class = "wrapper" id = searchArea>
+            <h2 id = songsMatchingTitle>Songs matching: {{title}}</h2>
+            <table id="searchAreaTable">
+                <tr>
+                    <th>Add</th>
+                    <th>Title</th>
+                    <th>Artist</th>
+                    <th>Artwork</th>
+                </tr>
+                {{#each songEntries}}
+                    <tr>
+                        <td><button type="button" id="{{this.trackId}}" class="addToPlaylist" onclick="addToPlaylist(this)">+</button></td>
+                        <td>{{this.trackName}}</td>
+                        <td>{{this.artistName}}</td>
+                        <td><img src="{{this.artworkUrl60}}" alt="{{this.artworkUrl60}}"></img></td>
+                    </tr>
+                {{/each}}
+            </table>
+        </div>
+
+        <div class = "wrapper" id = playlistArea>
+        </div>
+        
+    </div>
+    <script src="/index.js"></script>
+</body>
+
+</html>

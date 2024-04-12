@@ -1,0 +1,164 @@
+/* Your styles go in this file */
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white; 
+    text-align: right; 
+}
+
+.nav-links li {
+    display: inline-block; 
+    margin-left: 10px; 
+}
+
+/* Style links */
+.nav-links li a {
+    display: inline-block; 
+    color: #007bff; 
+    text-align: center;
+    padding: 10px 20px; 
+    text-decoration: none;
+    transition: background-color 0.3s; 
+    font-size: 16px; 
+    background-color: #f8f9fa; 
+    border-radius: 5px; 
+}
+
+.nav-links li a:hover {
+    background-color: #007bff; 
+    color: white; 
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h1, h2, h3 {
+    color: #000000; 
+    font-family: Arial, sans-serif; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px; 
+    margin-bottom: 20px; 
+    padding-bottom: 10px; 
+    border-bottom: 2px solid #f8f9fa; 
+}
+
+h2 {
+    font-size: 28px; 
+}
+
+h3 {
+    font-size: 24px; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px; 
+    background-color: #007bff; 
+    color: white; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    text-align: center; 
+    text-decoration: none; 
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+input {
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2); 
+}
+
+td, th {
+    border: 1px solid #dee2e6; 
+    text-align: left;
+    padding: 10px 20px; 
+    background-color: #f8f9fa; 
+    color: #007bff; 
+}
+
+th {
+    background-color: white; 
+    border-bottom: 2px solid #007bff; 
+}
+
+/* Adding rounded corners to the table */
+/* Apply to the first and last th for header */
+th:first-child {
+    border-top-left-radius: 5px;
+}
+
+th:last-child {
+    border-top-right-radius: 5px;
+}
+
+/* Apply to the first and last td of each row */
+tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
+}
+
+#playlistArea, #inputArea, #searchArea, #navArea {
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: #007bff; 
+    color: white; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+  
+.button:hover {
+    background-color: #0056b3; 
+}
+

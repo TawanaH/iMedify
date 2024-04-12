@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar" id = navArea>
+        <ul class="nav-links">
+            <li><a href="/private/home">Home</a></li>
+            <li><a href="/private/users">Users</a></li>
+            <li><a href="/private/local">Add Local Media</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Users: </h2>
+        <table id="usersTable">
+            <tr>
+                <th>Userid: </th>
+                <th>Password: </th>
+            </tr>
+            {{#each users}}
+                <tr>
+                    <td>{{this.userid}}</td>
+                    <td>{{this.password}}</td>
+                </tr>
+            {{/each}}
+        </table>
+    </div>
+    <script src="/index.js"></script>
+</body>
+
+</html>

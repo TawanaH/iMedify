@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>iTunes Player</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar" id = navArea>
+            <ul class="nav-links">
+                <li><a href="/private/home">Home</a></li>
+            </ul>
+        </nav>
+
+        <div class = "wrapper">
+            <h1>Add local media: </h1>
+            <label for="trackName"><b>Track Name:</b></label>
+            <input type="text" placeholder="Enter Track Name" name="trackName" id="trackName" required>
+
+            <label for="artistName"><b>Artist Name:</b></label>
+            <input type="text" placeholder="Enter Artist Name" name="artistName" id="artistName" required>
+
+            <label for="artworkURL"><b>Artwork URL:</b></label>
+            <input type="text" placeholder="Enter Artwork URL" name="artworkURL" id="artworkURL" required>
+
+            <button id="submit_button"  style="margin-bottom: 50px;" onclick="addLocalMedia()">Add media</button>
+        </div>
+
+        <div class = "wrapper" id = playlistArea>
+        </div>
+
+    </div>
+    <script src="/index.js"></script>
+</body>
+
+</html>

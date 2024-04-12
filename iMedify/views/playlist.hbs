@@ -1,0 +1,15 @@
+<h2>Playlist</h2>
+<table id="playlistTable">
+    <tr>
+        <th>Title</th>
+        <th>Artist</th>
+        <th>Artwork</th>
+    </tr>
+    {{#each playlistSongs}}
+        <tr>
+            <td>{{this.trackName}}</td>
+            <td>{{this.artistName}}</td>
+            <td><img src="{{this.artworkURL}}" alt="{{this.artworkURL}}"></img></td>
+        </tr>
+    {{/each}}
+</table>
