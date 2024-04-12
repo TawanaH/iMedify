@@ -1,2 +1,1 @@
-* linguist-vendored
-*.hbs linguist-vendored=false
+*.hbs linguist-vendored
